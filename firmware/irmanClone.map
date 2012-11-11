@@ -1,0 +1,867 @@
+MPLINK 4.44, Linker
+Linker Map File - Created Sat Nov 10 23:28:36 2012
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+           .code___init.o       code   0x000006    program   0x000002
+      InterruptVectorHigh       code   0x000008    program   0x000006
+                   .cinit    romdata   0x00000e    program   0x00000e
+       .code_usb_device.o       code   0x00001c    program   0x000f9a
+ .code_usb_function_cdc.o       code   0x000fb6    program   0x000450
+             .code_main.o       code   0x001406    program   0x000448
+.romdata_usb_descriptors.o    romdata   0x00184e    program   0x0000c9
+        .idata___init.o_i    romdata   0x001917    program   0x000000
+        .romdata___init.o    romdata   0x001917    program   0x000000
+         .romdata_c018i.o    romdata   0x001917    program   0x000000
+          .romdata_main.o    romdata   0x001917    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x001917    program   0x000000
+.romdata_usb_function_cdc.o    romdata   0x001917    program   0x000000
+.idata_usb_function_cdc.o_i    romdata   0x001917    program   0x000000
+    .romdata_usb_device.o    romdata   0x001917    program   0x000000
+    .idata_usb_device.o_i    romdata   0x001917    program   0x000000
+         .idata_c018i.o_i    romdata   0x001917    program   0x000000
+  .code_usb_descriptors.o       code   0x001918    program   0x000000
+            .code_c018i.o       code   0x001918    program   0x000000
+               _cinit_scn       code   0x001918    program   0x00009e
+                   STRING       code   0x0019b6    program   0x000034
+                    .code       code   0x0019ea    program   0x000020
+             _startup_scn       code   0x001a0a    program   0x00001c
+          .idata_main.o_i    romdata   0x001a26    program   0x000005
+    .config_300000_main.o    romdata   0x300000    program   0x000001
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+    .config_300008_main.o    romdata   0x300008    program   0x000001
+    .config_300009_main.o    romdata   0x300009    program   0x000001
+    .config_30000a_main.o    romdata   0x30000a    program   0x000001
+    .config_30000b_main.o    romdata   0x30000b    program   0x000001
+    .config_30000c_main.o    romdata   0x30000c    program   0x000001
+    .config_30000d_main.o    romdata   0x30000d    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x00000b
+                 .tmpdata      udata   0x00000b       data   0x000003
+.udata_usb_function_cdc.o      udata   0x000060       data   0x000019
+           .udata_c018i.o      udata   0x000079       data   0x00000a
+            .idata_main.o      idata   0x000083       data   0x000005
+                   .stack      udata   0x000200       data   0x000100
+            .udata_main.o      udata   0x000300       data   0x0000bc
+      .udata_usb_device.o      udata   0x0003bc       data   0x000035
+      .idata_usb_device.o      idata   0x0003f1       data   0x000000
+.idata_usb_function_cdc.o      idata   0x0003f1       data   0x000000
+ .udata_usb_descriptors.o      udata   0x0003f1       data   0x000000
+ .idata_usb_descriptors.o      idata   0x0003f1       data   0x000000
+          .udata___init.o      udata   0x0003f1       data   0x000000
+          .idata___init.o      idata   0x0003f1       data   0x000000
+           .idata_c018i.o      idata   0x0003f1       data   0x000000
+                  USB_BDT      udata   0x000400       data   0x000050
+            USB_VARIABLES      udata   0x000500       data   0x00008f
+            SFR_UNBANKED0      udata   0x000f66       data   0x00009a
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x001916      
+                            0x001918    0x001a2a      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            6710 out of 24856 program addresses used, program memory utilization is 26%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+           BlinkUSBStatus   0x00172c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                CDCInitEP   0x001058    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+             CDCTxService   0x0012ba    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+         InitializeSystem   0x001412    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+          InitializeUSART   0x0017b0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+     InterruptHandlerHigh   0x001628    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+      InterruptVectorHigh   0x000008    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                ProcessIO   0x001446    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+       USBCBCheckOtherReq   0x001828    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+        USBCBErrorHandler   0x001826    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              USBCBInitEP   0x00182e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+          USBCBSendResume   0x001832    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+    USBCBStdSetDscHandler   0x00182c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+             USBCBSuspend   0x001820    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+     USBCBWakeFromSuspend   0x001822    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+        USBCB_SOF_Handler   0x001824    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+       USBCheckCDCRequest   0x000fb6    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+       USBCheckStdRequest   0x0004ec    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+    USBClearInterruptFlag   0x000f7e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+     USBConfigureEndpoint   0x000c62    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+         USBCtrlEPService   0x000284    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+ USBCtrlEPServiceComplete   0x00082c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBCtrlTrfInHandler   0x000316    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+     USBCtrlTrfOutHandler   0x000306    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBCtrlTrfRxService   0x000ae6    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+   USBCtrlTrfSetupHandler   0x0002d8    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBCtrlTrfTxService   0x0009d0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+            USBDeviceInit   0x00001c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+           USBDeviceTasks   0x0000c8    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+        USBEnableEndpoint   0x000d36    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+USBPrepareForNextSetupTrf   0x0003b0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+         USBStallEndpoint   0x000dac    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+          USBStallHandler   0x0001fa    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+  USBStdFeatureReqHandler   0x00059c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBStdGetDscHandler   0x0006b6    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+   USBStdGetStatusHandler   0x00076a    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBStdSetCfgHandler   0x000c08    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+               USBSuspend   0x000240    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+     USBTransferOnePacket   0x000e8c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+       USBWakeFromSuspend   0x00025e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+               USB_CD_Ptr   0x00190f    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+               USB_SD_Ptr   0x001911    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                 UserInit   0x00141e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              _2jContinue   0x0019d6    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x0019e0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x001a24    program     static                          
+       ___return_lbl00002   0x0019b4    program     static                          
+       ___return_lbl00032   0x00000c    program     static                          
+               __config_0   0x300000    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_1   0x300001    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              __config_10   0x30000c    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              __config_11   0x30000d    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_2   0x300002    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_3   0x300003    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_4   0x300005    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_5   0x300006    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_6   0x300008    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_7   0x300009    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_8   0x30000a    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_9   0x30000b    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                   __init   0x000006    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+            __zero_memory   0x0019ea    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                _do_cinit   0x001918    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 _startup   0x001a0a    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x001a00    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+        configDescriptor1   0x001860    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                copy_loop   0x00198a    program     static                          
+            copy_one_byte   0x001990    program     static                          
+               device_dsc   0x00184e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                     done   0x0019b4    program     static                          
+             done_copying   0x00199e    program     static                          
+                getcUSART   0x0017f6    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+             getsUSBUSART   0x0010c0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                     jEnd   0x0019e8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x0019ca    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     loop   0x001a1a    program     static                          
+                   loop_h   0x0019f8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   loop_l   0x001a02    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     main   0x001406    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                   memset   0x0019b6    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              putUSBUSART   0x001182    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                putcUSART   0x0017e0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+            putrsUSBUSART   0x001234    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+             putsUSBUSART   0x0011b0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                    sd000   0x0018a3    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                    sd001   0x0018a7    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                    sd002   0x0018db    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                     test   0x001932    program     static                          
+               zero_block   0x0019f8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADCON0   0x000fc2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               ADCON0bits   0x000fc2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADCON1   0x000fc1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               ADCON1bits   0x000fc1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADCON2   0x000fc0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               ADCON2bits   0x000fc0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    ADRES   0x000fc3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADRESH   0x000fc4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADRESL   0x000fc3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  BAUDCON   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              BAUDCONbits   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  BAUDCTL   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              BAUDCTLbits   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      BDT   0x000400       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                      BSR   0x000fe0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              BaudRateGen   0x00006d       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                   CCP1AS   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               CCP1ASbits   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  CCP1CON   0x000fbd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              CCP1CONbits   0x000fbd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  CCP1DEL   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              CCP1DELbits   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  CCP2CON   0x000fba       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              CCP2CONbits   0x000fba       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    CCPR1   0x000fbe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCPR1H   0x000fbf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCPR1L   0x000fbe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    CCPR2   0x000fbb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCPR2H   0x000fbc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCPR2L   0x000fbb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+          CDCDataInHandle   0x00006a       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+         CDCDataOutHandle   0x000068       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                    CMCON   0x000fb4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                CMCONbits   0x000fb4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CVRCON   0x000fb5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               CVRCONbits   0x000fb5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              CtrlTrfData   0x000448       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                     DDRA   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 DDRAbits   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     DDRB   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 DDRBbits   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     DDRC   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 DDRCbits   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  ECCP1AS   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              ECCP1ASbits   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 ECCP1DEL   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+             ECCP1DELbits   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    EEADR   0x000fa9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   EECON1   0x000fa6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               EECON1bits   0x000fa6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   EECON2   0x000fa7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   EEDATA   0x000fa8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     FSR0   0x000fe9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR0H   0x000fea       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR0L   0x000fe9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     FSR1   0x000fe1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR1H   0x000fe2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR1L   0x000fe1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     FSR2   0x000fd9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR2H   0x000fda       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR2L   0x000fd9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  HLVDCON   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              HLVDCONbits   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    INDF0   0x000fef       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    INDF1   0x000fe7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    INDF2   0x000fdf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   INTCON   0x000ff2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  INTCON2   0x000ff1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              INTCON2bits   0x000ff1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  INTCON3   0x000ff0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              INTCON3bits   0x000ff0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               INTCONbits   0x000ff2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     IPR1   0x000f9f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 IPR1bits   0x000f9f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     IPR2   0x000fa2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 IPR2bits   0x000fa2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     LATA   0x000f89       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 LATAbits   0x000f89       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     LATB   0x000f8a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 LATBbits   0x000f8a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     LATC   0x000f8b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 LATCbits   0x000f8b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   LVDCON   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               LVDCONbits   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   OSCCON   0x000fd3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               OSCCONbits   0x000fd3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  OSCTUNE   0x000f9b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              OSCTUNEbits   0x000f9b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                       PC   0x000ff9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      PCL   0x000ff9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PCLATH   0x000ffa       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PCLATU   0x000ffb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PIE1   0x000f9d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 PIE1bits   0x000f9d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PIE2   0x000fa0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 PIE2bits   0x000fa0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PIR1   0x000f9e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 PIR1bits   0x000f9e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PIR2   0x000fa1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 PIR2bits   0x000fa1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PLUSW0   0x000feb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PLUSW1   0x000fe3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PLUSW2   0x000fdb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PORTA   0x000f80       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                PORTAbits   0x000f80       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PORTB   0x000f81       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                PORTBbits   0x000f81       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PORTC   0x000f82       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                PORTCbits   0x000f82       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PORTE   0x000f84       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                PORTEbits   0x000f84       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTDEC0   0x000fed       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTDEC1   0x000fe5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTDEC2   0x000fdd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTINC0   0x000fee       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTINC1   0x000fe6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTINC2   0x000fde       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      PR2   0x000fcb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  PREINC0   0x000fec       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  PREINC1   0x000fe4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  PREINC2   0x000fdc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PROD   0x000ff3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PRODH   0x000ff4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PRODL   0x000ff3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     RCON   0x000fd0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 RCONbits   0x000fd0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    RCREG   0x000fae       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    RCSTA   0x000fab       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                RCSTAbits   0x000fab       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+             RemoteWakeup   0x0003e3       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                     SIGN   0x000009       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                    SPBRG   0x000faf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   SPBRGH   0x000fb0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   SSPADD   0x000fc8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   SSPBUF   0x000fc9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  SSPCON1   0x000fc6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              SSPCON1bits   0x000fc6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  SSPCON2   0x000fc5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              SSPCON2bits   0x000fc5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  SSPSTAT   0x000fc7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              SSPSTATbits   0x000fc7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   STATUS   0x000fd8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               STATUSbits   0x000fd8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   STKPTR   0x000ffc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               STKPTRbits   0x000ffc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 SetupPkt   0x000440       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                    T0CON   0x000fd5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                T0CONbits   0x000fd5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    T1CON   0x000fcd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                T1CONbits   0x000fcd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    T2CON   0x000fca       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                T2CONbits   0x000fca       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    T3CON   0x000fb1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                T3CONbits   0x000fb1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   TABLAT   0x000ff5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   TBLPTR   0x000ff6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  TBLPTRH   0x000ff7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  TBLPTRL   0x000ff6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  TBLPTRU   0x000ff8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR0H   0x000fd7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR0L   0x000fd6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR1H   0x000fcf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR1L   0x000fce       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     TMR2   0x000fcc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR3H   0x000fb3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR3L   0x000fb2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      TOS   0x000ffd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     TOSH   0x000ffe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     TOSL   0x000ffd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     TOSU   0x000fff       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TRISA   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                TRISAbits   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TRISB   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                TRISBbits   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TRISC   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                TRISCbits   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TXREG   0x000fad       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TXSTA   0x000fac       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                TXSTAbits   0x000fac       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UADDR   0x000f6e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UADDRbits   0x000f6e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UCFG   0x000f6f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UCFGbits   0x000f6f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UCON   0x000f6d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UCONbits   0x000f6d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEIE   0x000f6b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEIEbits   0x000f6b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEIR   0x000f6a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEIRbits   0x000f6a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP0   0x000f70       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP0bits   0x000f70       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP1   0x000f71       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP10   0x000f7a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP10bits   0x000f7a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP11   0x000f7b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP11bits   0x000f7b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP12   0x000f7c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP12bits   0x000f7c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP13   0x000f7d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP13bits   0x000f7d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP14   0x000f7e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP14bits   0x000f7e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP15   0x000f7f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP15bits   0x000f7f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP1bits   0x000f71       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP2   0x000f72       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP2bits   0x000f72       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP3   0x000f73       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP3bits   0x000f73       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP4   0x000f74       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP4bits   0x000f74       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP5   0x000f75       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP5bits   0x000f75       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP6   0x000f76       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP6bits   0x000f76       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP7   0x000f77       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP7bits   0x000f77       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP8   0x000f78       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP8bits   0x000f78       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP9   0x000f79       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP9bits   0x000f79       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UFRM   0x000f66       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UFRMH   0x000f67       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UFRMHbits   0x000f67       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UFRML   0x000f66       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UFRMLbits   0x000f66       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      UIE   0x000f69       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  UIEbits   0x000f69       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      UIR   0x000f68       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  UIRbits   0x000f68       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+   USBActiveConfiguration   0x0003bd       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+    USBAlternateInterface   0x0003be       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+           USBDeviceState   0x0003bc       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                USBInData   0x0003eb       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+       USBInMaxPacketSize   0x0003e5       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+            USB_In_Buffer   0x000300       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+           USB_Out_Buffer   0x000340       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                    USTAT   0x000f6c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                USTATbits   0x000f6c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                USTATcopy   0x0003e4       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                   WDTCON   0x000fd1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               WDTCONbits   0x000fd1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     WREG   0x000fe8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 __AARGB0   0x000007       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                __FPFLAGS   0x00000a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000003       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000000       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __tmp_0   0x00000b       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                  __tmp_0   0x00000b       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                        a   0x0003b9       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                     addr   0x0003b6       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                        b   0x0003b3       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              cdc_data_rx   0x000508       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+              cdc_data_tx   0x000548       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+             cdc_mem_type   0x000067       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+               cdc_notice   0x000500       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+               cdc_rx_len   0x000060       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+            cdc_trf_state   0x000061       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+               cdc_tx_len   0x000066       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                      cmd   0x0003b7       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+     controlTransferState   0x0003d4       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+    control_signal_bitmap   0x00006c       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                curr_byte   0x00007c       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x00007e       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x000080       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              delay_count   0x0003ba       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+dummy_encapsulated_cmd_response   0x000071       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                  inPipes   0x0003d5       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                  irState   0x000083       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                led_count   0x000086       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              line_coding   0x000588       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                 outPipes   0x0003da       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+   pBDTEntryEP0OutCurrent   0x0003bf       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      pBDTEntryEP0OutNext   0x0003c1       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+              pBDTEntryIn   0x0003cb       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+             pBDTEntryOut   0x0003c3       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                  pCDCDst   0x000064       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                  pCDCSrc   0x000062       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                     pDst   0x0003e1       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                      pr0   0x000084       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                      pr1   0x000085       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                     prom   0x000079       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     rc5x   0x0003b5       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                   sample   0x000380       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              sampleCount   0x0003b2       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+        shortPacketStatus   0x0003d3       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+            stringPrinted   0x0003b4       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                   toggle   0x0003b8       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                   __init   0x000006    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+      InterruptVectorHigh   0x000008    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+       ___return_lbl00032   0x00000c    program     static                          
+            USBDeviceInit   0x00001c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+           USBDeviceTasks   0x0000c8    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+          USBStallHandler   0x0001fa    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+               USBSuspend   0x000240    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+       USBWakeFromSuspend   0x00025e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+         USBCtrlEPService   0x000284    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+   USBCtrlTrfSetupHandler   0x0002d8    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+     USBCtrlTrfOutHandler   0x000306    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBCtrlTrfInHandler   0x000316    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+USBPrepareForNextSetupTrf   0x0003b0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+       USBCheckStdRequest   0x0004ec    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+  USBStdFeatureReqHandler   0x00059c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBStdGetDscHandler   0x0006b6    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+   USBStdGetStatusHandler   0x00076a    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+ USBCtrlEPServiceComplete   0x00082c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBCtrlTrfTxService   0x0009d0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBCtrlTrfRxService   0x000ae6    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      USBStdSetCfgHandler   0x000c08    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+     USBConfigureEndpoint   0x000c62    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+        USBEnableEndpoint   0x000d36    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+         USBStallEndpoint   0x000dac    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+     USBTransferOnePacket   0x000e8c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+    USBClearInterruptFlag   0x000f7e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+       USBCheckCDCRequest   0x000fb6    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                CDCInitEP   0x001058    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+             getsUSBUSART   0x0010c0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+              putUSBUSART   0x001182    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+             putsUSBUSART   0x0011b0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+            putrsUSBUSART   0x001234    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+             CDCTxService   0x0012ba    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                     main   0x001406    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+         InitializeSystem   0x001412    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                 UserInit   0x00141e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                ProcessIO   0x001446    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+     InterruptHandlerHigh   0x001628    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+           BlinkUSBStatus   0x00172c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+          InitializeUSART   0x0017b0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                putcUSART   0x0017e0    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                getcUSART   0x0017f6    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+             USBCBSuspend   0x001820    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+     USBCBWakeFromSuspend   0x001822    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+        USBCB_SOF_Handler   0x001824    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+        USBCBErrorHandler   0x001826    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+       USBCBCheckOtherReq   0x001828    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+    USBCBStdSetDscHandler   0x00182c    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              USBCBInitEP   0x00182e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+          USBCBSendResume   0x001832    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               device_dsc   0x00184e    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+        configDescriptor1   0x001860    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                    sd000   0x0018a3    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                    sd001   0x0018a7    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                    sd002   0x0018db    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+               USB_CD_Ptr   0x00190f    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+               USB_SD_Ptr   0x001911    program     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\usb_descriptors.c
+                _do_cinit   0x001918    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x001932    program     static                          
+                copy_loop   0x00198a    program     static                          
+            copy_one_byte   0x001990    program     static                          
+             done_copying   0x00199e    program     static                          
+                     done   0x0019b4    program     static                          
+       ___return_lbl00002   0x0019b4    program     static                          
+                   memset   0x0019b6    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x0019ca    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              _2jContinue   0x0019d6    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x0019e0    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x0019e8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+            __zero_memory   0x0019ea    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               zero_block   0x0019f8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   loop_h   0x0019f8    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                compare_l   0x001a00    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   loop_l   0x001a02    program     static D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 _startup   0x001a0a    program     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x001a1a    program     static                          
+       ___return_lbl00001   0x001a24    program     static                          
+               __config_0   0x300000    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_1   0x300001    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_2   0x300002    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_3   0x300003    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_4   0x300005    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_5   0x300006    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_6   0x300008    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_7   0x300009    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_8   0x30000a    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+               __config_9   0x30000b    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              __config_10   0x30000c    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              __config_11   0x30000d    program     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                  __REMB3   0x000000       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000000       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000001       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000001       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000002       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000002       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000003       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000003       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000004       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000005       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000006       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000007       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x000008       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                     SIGN   0x000009       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x00000a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x00000a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __tmp_0   0x00000b       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                  __tmp_0   0x00000b       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+               cdc_rx_len   0x000060       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+            cdc_trf_state   0x000061       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                  pCDCSrc   0x000062       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                  pCDCDst   0x000064       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+               cdc_tx_len   0x000066       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+             cdc_mem_type   0x000067       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+         CDCDataOutHandle   0x000068       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+          CDCDataInHandle   0x00006a       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+    control_signal_bitmap   0x00006c       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+              BaudRateGen   0x00006d       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+dummy_encapsulated_cmd_response   0x000071       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                     prom   0x000079       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x00007c       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x00007e       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x000080       data     static D:\3.43\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                  irState   0x000083       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                      pr0   0x000084       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                      pr1   0x000085       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                led_count   0x000086       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+            USB_In_Buffer   0x000300       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+           USB_Out_Buffer   0x000340       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                   sample   0x000380       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              sampleCount   0x0003b2       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                        b   0x0003b3       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+            stringPrinted   0x0003b4       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                     rc5x   0x0003b5       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                     addr   0x0003b6       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                      cmd   0x0003b7       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                   toggle   0x0003b8       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+                        a   0x0003b9       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+              delay_count   0x0003ba       data     static C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\main.c
+           USBDeviceState   0x0003bc       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+   USBActiveConfiguration   0x0003bd       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+    USBAlternateInterface   0x0003be       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+   pBDTEntryEP0OutCurrent   0x0003bf       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+      pBDTEntryEP0OutNext   0x0003c1       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+             pBDTEntryOut   0x0003c3       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+              pBDTEntryIn   0x0003cb       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+        shortPacketStatus   0x0003d3       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+     controlTransferState   0x0003d4       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                  inPipes   0x0003d5       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                 outPipes   0x0003da       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                     pDst   0x0003e1       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+             RemoteWakeup   0x0003e3       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                USTATcopy   0x0003e4       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+       USBInMaxPacketSize   0x0003e5       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                USBInData   0x0003eb       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                      BDT   0x000400       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+                 SetupPkt   0x000440       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+              CtrlTrfData   0x000448       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\usb_device.c
+               cdc_notice   0x000500       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+              cdc_data_rx   0x000508       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+              cdc_data_tx   0x000548       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+              line_coding   0x000588       data     extern C:\Users\Macbook\Downloads\USBIRr.v1a\firmware\Usb\CDC Device Driver\usb_function_cdc.c
+                UFRMLbits   0x000f66       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UFRML   0x000f66       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UFRM   0x000f66       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UFRMH   0x000f67       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UFRMHbits   0x000f67       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  UIRbits   0x000f68       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      UIR   0x000f68       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      UIE   0x000f69       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  UIEbits   0x000f69       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEIR   0x000f6a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEIRbits   0x000f6a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEIE   0x000f6b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEIEbits   0x000f6b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                USTATbits   0x000f6c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    USTAT   0x000f6c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UCON   0x000f6d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UCONbits   0x000f6d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UADDRbits   0x000f6e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UADDR   0x000f6e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UCFGbits   0x000f6f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UCFG   0x000f6f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP0bits   0x000f70       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP0   0x000f70       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP1bits   0x000f71       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP1   0x000f71       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP2   0x000f72       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP2bits   0x000f72       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP3   0x000f73       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP3bits   0x000f73       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP4   0x000f74       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP4bits   0x000f74       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP5bits   0x000f75       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP5   0x000f75       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP6   0x000f76       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP6bits   0x000f76       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP7   0x000f77       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP7bits   0x000f77       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP8bits   0x000f78       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP8   0x000f78       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 UEP9bits   0x000f79       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     UEP9   0x000f79       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP10bits   0x000f7a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP10   0x000f7a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP11bits   0x000f7b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP11   0x000f7b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP12   0x000f7c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP12bits   0x000f7c       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP13   0x000f7d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP13bits   0x000f7d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP14   0x000f7e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP14bits   0x000f7e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    UEP15   0x000f7f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                UEP15bits   0x000f7f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                PORTAbits   0x000f80       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PORTA   0x000f80       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PORTB   0x000f81       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                PORTBbits   0x000f81       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PORTC   0x000f82       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                PORTCbits   0x000f82       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PORTE   0x000f84       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                PORTEbits   0x000f84       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 LATAbits   0x000f89       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     LATA   0x000f89       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 LATBbits   0x000f8a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     LATB   0x000f8a       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     LATC   0x000f8b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 LATCbits   0x000f8b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     DDRA   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TRISA   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 DDRAbits   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                TRISAbits   0x000f92       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                TRISBbits   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TRISB   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     DDRB   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 DDRBbits   0x000f93       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     DDRC   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 DDRCbits   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TRISC   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                TRISCbits   0x000f94       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              OSCTUNEbits   0x000f9b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  OSCTUNE   0x000f9b       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PIE1   0x000f9d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 PIE1bits   0x000f9d       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 PIR1bits   0x000f9e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PIR1   0x000f9e       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     IPR1   0x000f9f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 IPR1bits   0x000f9f       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 PIE2bits   0x000fa0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PIE2   0x000fa0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PIR2   0x000fa1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 PIR2bits   0x000fa1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     IPR2   0x000fa2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 IPR2bits   0x000fa2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               EECON1bits   0x000fa6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   EECON1   0x000fa6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   EECON2   0x000fa7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   EEDATA   0x000fa8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    EEADR   0x000fa9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                RCSTAbits   0x000fab       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    RCSTA   0x000fab       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TXSTA   0x000fac       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                TXSTAbits   0x000fac       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TXREG   0x000fad       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    RCREG   0x000fae       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    SPBRG   0x000faf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   SPBRGH   0x000fb0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                T3CONbits   0x000fb1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    T3CON   0x000fb1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR3L   0x000fb2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR3H   0x000fb3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                CMCONbits   0x000fb4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    CMCON   0x000fb4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               CVRCONbits   0x000fb5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CVRCON   0x000fb5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              ECCP1ASbits   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               CCP1ASbits   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCP1AS   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  ECCP1AS   0x000fb6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+             ECCP1DELbits   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              CCP1DELbits   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  CCP1DEL   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 ECCP1DEL   0x000fb7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              BAUDCONbits   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  BAUDCTL   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              BAUDCTLbits   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  BAUDCON   0x000fb8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  CCP2CON   0x000fba       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              CCP2CONbits   0x000fba       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCPR2L   0x000fbb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    CCPR2   0x000fbb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCPR2H   0x000fbc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  CCP1CON   0x000fbd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              CCP1CONbits   0x000fbd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCPR1L   0x000fbe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    CCPR1   0x000fbe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   CCPR1H   0x000fbf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               ADCON2bits   0x000fc0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADCON2   0x000fc0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               ADCON1bits   0x000fc1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADCON1   0x000fc1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADCON0   0x000fc2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               ADCON0bits   0x000fc2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    ADRES   0x000fc3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADRESL   0x000fc3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   ADRESH   0x000fc4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  SSPCON2   0x000fc5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              SSPCON2bits   0x000fc5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  SSPCON1   0x000fc6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              SSPCON1bits   0x000fc6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  SSPSTAT   0x000fc7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              SSPSTATbits   0x000fc7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   SSPADD   0x000fc8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   SSPBUF   0x000fc9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                T2CONbits   0x000fca       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    T2CON   0x000fca       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      PR2   0x000fcb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     TMR2   0x000fcc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                T1CONbits   0x000fcd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    T1CON   0x000fcd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR1L   0x000fce       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR1H   0x000fcf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     RCON   0x000fd0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 RCONbits   0x000fd0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   WDTCON   0x000fd1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               WDTCONbits   0x000fd1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               LVDCONbits   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   LVDCON   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              HLVDCONbits   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  HLVDCON   0x000fd2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               OSCCONbits   0x000fd3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   OSCCON   0x000fd3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    T0CON   0x000fd5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                T0CONbits   0x000fd5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR0L   0x000fd6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    TMR0H   0x000fd7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               STATUSbits   0x000fd8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   STATUS   0x000fd8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR2L   0x000fd9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     FSR2   0x000fd9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR2H   0x000fda       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PLUSW2   0x000fdb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  PREINC2   0x000fdc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTDEC2   0x000fdd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTINC2   0x000fde       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    INDF2   0x000fdf       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      BSR   0x000fe0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     FSR1   0x000fe1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR1L   0x000fe1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR1H   0x000fe2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PLUSW1   0x000fe3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  PREINC1   0x000fe4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTDEC1   0x000fe5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTINC1   0x000fe6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    INDF1   0x000fe7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     WREG   0x000fe8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     FSR0   0x000fe9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR0L   0x000fe9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    FSR0H   0x000fea       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PLUSW0   0x000feb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  PREINC0   0x000fec       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTDEC0   0x000fed       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                 POSTINC0   0x000fee       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    INDF0   0x000fef       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              INTCON3bits   0x000ff0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  INTCON3   0x000ff0       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+              INTCON2bits   0x000ff1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  INTCON2   0x000ff1       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               INTCONbits   0x000ff2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   INTCON   0x000ff2       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     PROD   0x000ff3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PRODL   0x000ff3       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                    PRODH   0x000ff4       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   TABLAT   0x000ff5       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  TBLPTRL   0x000ff6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   TBLPTR   0x000ff6       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  TBLPTRH   0x000ff7       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                  TBLPTRU   0x000ff8       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      PCL   0x000ff9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                       PC   0x000ff9       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PCLATH   0x000ffa       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   PCLATU   0x000ffb       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                   STKPTR   0x000ffc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+               STKPTRbits   0x000ffc       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                      TOS   0x000ffd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     TOSL   0x000ffd       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     TOSH   0x000ffe       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+                     TOSU   0x000fff       data     extern D:\3.43\pic18-lt\cxx-framework\src\traditional\proc\p18f2455.asm
+
+
