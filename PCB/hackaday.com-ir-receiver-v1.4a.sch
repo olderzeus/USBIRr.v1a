@@ -15951,9 +15951,8 @@ Source: 008-0260-0_E.pdf</description>
 </net>
 <net name="IRDATA" class="0">
 <segment>
-<wire x1="66.04" y1="134.62" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
-<label x="81.28" y="132.08" size="1.778" layer="95"/>
+<wire x1="66.04" y1="134.62" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
+<label x="81.28" y="134.62" size="1.778" layer="95"/>
 <pinref part="TSOP-1738" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
